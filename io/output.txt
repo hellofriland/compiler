@@ -1,0 +1,28 @@
+"int"	Keyword
+"a"		Identifier
+"="		Operator
+" "		Filter
+"10"	Digit
+";"		Separater
+"\n"	Filter
+"int"	Keyword
+"Num"	Identifier
+"="		Operator
+" "		Filter
+"100"	Digit
+";"		Separater
+" "		Filter
+"\n"	Filter
+"if"	Keyword
+"("		Separater
+" "		Filter
+"a"		Identifier
+"="		Operator
+" "		Filter
+"100"	Digit
+")"		Separater
+" "		Filter
+"{"		Separater
+"\n"	Filter
+"\n"	Filter
+"}"		Separater

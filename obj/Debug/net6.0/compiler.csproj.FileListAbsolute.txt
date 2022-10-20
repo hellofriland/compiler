@@ -1,0 +1,15 @@
+/home/friland/Projects/compiler/bin/Debug/net6.0/compiler
+/home/friland/Projects/compiler/bin/Debug/net6.0/compiler.deps.json
+/home/friland/Projects/compiler/bin/Debug/net6.0/compiler.runtimeconfig.json
+/home/friland/Projects/compiler/bin/Debug/net6.0/compiler.dll
+/home/friland/Projects/compiler/bin/Debug/net6.0/ref/compiler.dll
+/home/friland/Projects/compiler/bin/Debug/net6.0/compiler.pdb
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.csproj.AssemblyReference.cache
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.GeneratedMSBuildEditorConfig.editorconfig
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.AssemblyInfoInputs.cache
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.AssemblyInfo.cs
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.csproj.CoreCompileInputs.cache
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.dll
+/home/friland/Projects/compiler/obj/Debug/net6.0/ref/compiler.dll
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.pdb
+/home/friland/Projects/compiler/obj/Debug/net6.0/compiler.genruntimeconfig.cache
