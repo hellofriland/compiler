@@ -1,28 +1,31 @@
 "int"	Keyword
 "a"		Identifier
-"="		Operator
-" "		Filter
+"="	Operator
 "10"	Digit
-";"		Separater
+";"	Sepatater
 "\n"	Filter
 "int"	Keyword
 "Num"	Identifier
-"="		Operator
-" "		Filter
+"="	Operator
 "100"	Digit
-";"		Separater
-" "		Filter
+";"	Sepatater
 "\n"	Filter
 "if"	Keyword
-"("		Separater
+"("	Sepatater
 " "		Filter
 "a"		Identifier
-"="		Operator
-" "		Filter
+"=="	Operator
 "100"	Digit
-")"		Separater
+")"	Sepatater
 " "		Filter
-"{"		Separater
+"{"	Sepatater
 "\n"	Filter
+" "		Filter
+" "		Filter
+" "		Filter
+" "		Filter
+"a"		Identifier
+"="	Operator
+"1000"	Digit
 "\n"	Filter
-"}"		Separater
+"}"	Sepatater

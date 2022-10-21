@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Compiler {
+﻿namespace Compiler {
     class Program {
         public static void Main(string[] args) {
             // Console.Write("Input your file name:  ");

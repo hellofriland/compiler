@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Threading.Channels;
-
 namespace Compiler {
     class Analysis {
         /// <summary>
@@ -116,8 +112,6 @@ namespace Compiler {
             return false;
         }
 
-
-
         /// <summary>
         /// 进行词法分析
         /// </summary>
@@ -140,11 +134,9 @@ namespace Compiler {
                     }
                 }
                 else if (IsLowerCaseLetter(ch_context[i])) {
-                    while (IsLowerCaseLetter(ch_context[i])) {
-                        if (i < ch_context.Length -1) {
-                            arr = arr + ch_context[i];
-                            i++;
-                        }
+                    while (IsLowerCaseLetter(ch_context[i])) { 
+                        arr = arr + ch_context[i];
+                        i++;
                     }
 
                     if (IsKeyword(arr)) {
@@ -158,10 +150,8 @@ namespace Compiler {
                 }
                 else if (IsDigit(ch_context[i])) {
                     while (IsDigit(ch_context[i]) || (ch_context[i] == '.' && IsDigit(ch_context[i+1]) )) {
-                        if (i < ch_context.Length - 1) {
                             arr += ch_context[i];
                             i++;
-                        }
                     }
                     Lexical.Add($"\"{arr}\"\tDigit");
                     Console.WriteLine($"\"{arr}\"\tDigit");
@@ -175,43 +165,18 @@ namespace Compiler {
                     Lexical.Add($"\"{arr}\"\tIdentifier");
                     Console.WriteLine($"\"{arr}\"\tIdentifier");
                 }
-                else {
-                    switch (ch_context[i]) {
-                        case '!':
-                        case '+':
-                        case '-':
-                        case '*':
-                        case '/':
-                        case '%':
-                        case '>':
-                        case '<':
-                        case '=': {
-                            arr += ch_context[i];
-                            Lexical.Add($"\"{arr}\"\t\tOperator");
-                            Console.WriteLine($"\"{arr}\"\tOperator");
-                            break;
-                        }
-
-                        case ',':
-                        case ';':
-                        case '{':
-                        case '}':
-                        case '[':
-                        case ']':
-                        case '(':
-                        case ')': {
-                            arr += ch_context[i];
-                            Lexical.Add($"\"{arr}\"\t\tSeparater");
-                            Console.WriteLine($"\"{arr}\"\tSeparater");
-                            break;
-                        }
-
-                        default: {
-                            Lexical.Add(arr);
-                            Console.WriteLine($"\"{ch_context[i]}\" ---- Can't analysis");
-                            break;
-                        }
+                else if (IsOperator(ch_context[i].ToString())) {
+                    while (IsOperator(context[i].ToString())) {
+                        arr += ch_context[i];
+                        i++;
                     }
+                    Lexical.Add($"\"{arr}\"\tOperator");
+                    Console.WriteLine($"\"{arr}\"\tOperator");
+                }
+                else if (IsSeparater(ch_context[i].ToString())) {
+                    arr += ch_context[i];
+                    Lexical.Add($"\"{arr}\"\tSepatater");
+                    Console.WriteLine($"\"{arr}\"\tSepatater");
                 }
             }
         }
