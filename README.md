@@ -1,4 +1,4 @@
-# Friland's Compiler
+# Friland's Lexical Compiler
 
 ## 文件的输入与输出
 
