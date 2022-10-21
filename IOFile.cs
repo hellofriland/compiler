@@ -8,7 +8,7 @@ namespace Compiler{
         }
 
         public static void OutputFile(List<string> context) {
-            string path = "/home/friland/Projects/compiler/io/output.txt";
+            string path = "/home/friland/Projects/compiler/io/output_file.txt";
             FileInfo fl = new FileInfo(path);
             FileStream fs = fl.Create();
             fs.Close();

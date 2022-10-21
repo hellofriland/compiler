@@ -57,7 +57,6 @@ namespace Compiler {
             return false;
         }
 
-
         /// <summary>
         /// 是否为运算符
         /// </summary>
@@ -170,12 +169,12 @@ namespace Compiler {
                         arr += ch_context[i];
                         i++;
                     }
-                    Lexical.Add($"\"{arr}\"\tOperator");
+                    Lexical.Add($"\"{arr}\"\t\tOperator");
                     Console.WriteLine($"\"{arr}\"\tOperator");
                 }
                 else if (IsSeparater(ch_context[i].ToString())) {
                     arr += ch_context[i];
-                    Lexical.Add($"\"{arr}\"\tSepatater");
+                    Lexical.Add($"\"{arr}\"\t\tSepatater");
                     Console.WriteLine($"\"{arr}\"\tSepatater");
                 }
             }

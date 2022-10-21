@@ -7,7 +7,6 @@
             string context = IOFile.InputFile(file_name);
             
             Analysis.LexicalAnalysis(context);
-            
             IOFile.OutputFile(Analysis.Lexical);
         }
     }
