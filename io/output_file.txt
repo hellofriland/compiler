@@ -1,31 +1,32 @@
-"int"	Keyword
-"a"		Identifier
-"="		Operator
-"10"	Digit
-";"		Sepatater
-"\n"	Filter
-"int"	Keyword
-"Num"	Identifier
-"="		Operator
-"100"	Digit
-";"		Sepatater
-"\n"	Filter
-"if"	Keyword
-"("		Sepatater
-" "		Filter
-"a"		Identifier
-"=="		Operator
-"100"	Digit
-")"		Sepatater
-" "		Filter
-"{"		Sepatater
-"\n"	Filter
-" "		Filter
-" "		Filter
-" "		Filter
-" "		Filter
-"a"		Identifier
-"="		Operator
-"1000"	Digit
-"\n"	Filter
-"}"		Sepatater
+<int,Keyword>
+<a,Identifier>
+<=,Operator>
+<10,Digit>
+<;,Sepatater>
+<\n,tFilter>
+<int,Keyword>
+<Num,Identifier>
+<=,Operator>
+<100,Digit>
+<;,Sepatater>
+<\n,tFilter>
+<if,Keyword>
+<(,Sepatater>
+< ,Filter>
+<a,Identifier>
+<==,Operator>
+<100,Digit>
+<),Sepatater>
+< ,Filter>
+<{,Sepatater>
+<\n,tFilter>
+< ,Filter>
+< ,Filter>
+< ,Filter>
+< ,Filter>
+<a,Identifier>
+<=,Operator>
+<1000,Digit>
+<;,Sepatater>
+<\n,tFilter>
+<},Sepatater>

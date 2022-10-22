@@ -1,16 +1,11 @@
 namespace Compiler {
     class Analysis {
-        /// <summary>
-        /// 存储词汇分析的结果
-        /// </summary>
+        // 存储词汇分析的结果
         public static List<string> Lexical = new List<string>();
-        
         // 关键字
         private static string[] MyKeyword = { "if", "else", "void", "int", "double", "float", "char", "string" };
-
         // 分隔符
         private static string[] MySeparater = { ",", ";", "{", "}", "[", "]", "(", ")" };
-
         // 运算符
         private static string[] MyOperator = {"!", "+", "-", "*", "/", "%", ">", "<", "="};
 
@@ -124,12 +119,10 @@ namespace Compiler {
 
                 if (IsFilter(ch_context[i])) {
                     if (ch_context[i] == ' ') {
-                        Lexical.Add("\" \"\t\tFilter");
-                        Console.WriteLine("\" \"\tFilter");
+                        Lexical.Add("< ,Filter>");
                     }
                     if (ch_context[i] == '\n') {
-                        Lexical.Add("\"\\n\"\tFilter");
-                        Console.WriteLine(" \"\\n\"\tFilter");
+                        Lexical.Add("<\\n,tFilter>");
                     }
                 }
                 else if (IsLowerCaseLetter(ch_context[i])) {
@@ -139,12 +132,10 @@ namespace Compiler {
                     }
 
                     if (IsKeyword(arr)) {
-                        Lexical.Add($"\"{arr}\"\tKeyword");
-                        Console.WriteLine($"\"{arr}\"\tKeyword");
+                        Lexical.Add($"<{arr},Keyword>");
                     }
                     else {
-                        Lexical.Add($"\"{arr}\"\t\tIdentifier");
-                        Console.WriteLine($"\"{arr}\"\tIdentifier");
+                        Lexical.Add($"<{arr},Identifier>");
                     }
                 }
                 else if (IsDigit(ch_context[i])) {
@@ -152,30 +143,25 @@ namespace Compiler {
                             arr += ch_context[i];
                             i++;
                     }
-                    Lexical.Add($"\"{arr}\"\tDigit");
-                    Console.WriteLine($"\"{arr}\"\tDigit");
+                    Lexical.Add($"<{arr},Digit>");
                 }
                 else if (IsUpperCaseLetter(ch_context[i])) {
                     while (IsUpperCaseLetter(ch_context[i]) || IsLowerCaseLetter(ch_context[i]) || IsDigit(ch_context[i])) {
                         arr += ch_context[i];
                         i++;
                     }
-                    
-                    Lexical.Add($"\"{arr}\"\tIdentifier");
-                    Console.WriteLine($"\"{arr}\"\tIdentifier");
+                    Lexical.Add($"<{arr},Identifier>");
                 }
                 else if (IsOperator(ch_context[i].ToString())) {
                     while (IsOperator(context[i].ToString())) {
                         arr += ch_context[i];
                         i++;
                     }
-                    Lexical.Add($"\"{arr}\"\t\tOperator");
-                    Console.WriteLine($"\"{arr}\"\tOperator");
+                    Lexical.Add($"<{arr},Operator>");
                 }
                 else if (IsSeparater(ch_context[i].ToString())) {
                     arr += ch_context[i];
-                    Lexical.Add($"\"{arr}\"\t\tSepatater");
-                    Console.WriteLine($"\"{arr}\"\tSepatater");
+                    Lexical.Add($"<{arr},Sepatater>");
                 }
             }
         }
