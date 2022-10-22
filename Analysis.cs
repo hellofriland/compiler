@@ -122,7 +122,7 @@ namespace Compiler {
                         Lexical.Add("< ,Filter>");
                     }
                     if (ch_context[i] == '\n') {
-                        Lexical.Add("<\\n,tFilter>");
+                        Lexical.Add("<\\n,Filter>");
                     }
                 }
                 else if (IsLowerCaseLetter(ch_context[i])) {

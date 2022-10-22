@@ -3,13 +3,13 @@
 <=,Operator>
 <10,Digit>
 <;,Sepatater>
-<\n,tFilter>
+<\n,Filter>
 <int,Keyword>
 <Num,Identifier>
 <=,Operator>
 <100,Digit>
 <;,Sepatater>
-<\n,tFilter>
+<\n,Filter>
 <if,Keyword>
 <(,Sepatater>
 < ,Filter>
@@ -19,7 +19,7 @@
 <),Sepatater>
 < ,Filter>
 <{,Sepatater>
-<\n,tFilter>
+<\n,Filter>
 < ,Filter>
 < ,Filter>
 < ,Filter>
@@ -28,5 +28,5 @@
 <=,Operator>
 <1000,Digit>
 <;,Sepatater>
-<\n,tFilter>
+<\n,Filter>
 <},Sepatater>
